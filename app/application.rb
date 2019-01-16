@@ -4,7 +4,7 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new
 
-    if req.path=="/items/name"
+    if req.path=="/items"
 
       item = @@items.find {|i| i.name}
       resp.write "#{i.price}"
