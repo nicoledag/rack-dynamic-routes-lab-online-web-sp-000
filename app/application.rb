@@ -4,10 +4,11 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new
 
-    if req.path=="/item"
+    if req.path=="/items/name"
+      resp.write "#{item.price}"
+      
 
-
-
+    
   end
 
 end
